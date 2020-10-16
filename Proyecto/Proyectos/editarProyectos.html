@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Residencias-ISC</title>
+    </head>
+    <body>
+        <header>
+            INSTITUTO TECNOLOGICO DE ESTUDIOS SUPERIORES DE ZAMORA
+        </header>
+        <nav>
+        <p>Menu</p>
+        <ul>
+            <li><a href="./consultaProyectos.html">Proyectos</a></li>
+            
+        </ul>
+        </nav>
+		  <main>
+            <section>
+                <h1>EDICIÓN DE PROYECTOS</h1>
+                <form>
+                <div id="datosContenido">
+                    <fieldset>
+                        <legend>Datos del proyecto</legend>
+                       
+                           <label>Titulo del Proyecto:</label>
+                           <input type="text" name="nombre" placeholder="Nombre del Edificio" maxlength="50" required> 
+                           <br>
+                           <label>Estatus:</label>
+						   <input type="radio" name="estatus" value="A" checked>Aceptado
+                           <input type="radio" name="estatus" value="R">Rechazado
+						   <br>
+                           <label>Fecha de Registro:</label>
+                           <input type="text" name="FechaRegistro" placeholder="Fecha de Registro" maxlength="50" required> 
+                           <br>
+                           <label>Fecha de Aceptación:</label>
+                           <input type="text" name="FechaAceptación" placeholder="Fecha de Aceptación" maxlength="50" required> 
+                           <br>
+                           <label>Contenido:</label>
+                           <input type="text" name="Contenido" placeholder="Contenido" maxlength="500" required> 
+                           <br>
+                           <label>Calificación:</label>
+                           <input type="number" name="calificacion" min="0" max="100" step="1" value="0" required>
+						   <button>Siguiente</button>
+                           <button>Cancelar</button>
+                        
+                    </fieldset>
+                </div>
+				 <div id="datosAdministrativos">
+                    <fieldset>
+                        <legend>Datos Administrativos</legend>
+                        <label>ID:</label>
+                        <input type="number" name="idProyecto" min="0" max="250" step="1" value="0" required>
+						<br>
+                        <label>NoDocente:</label>
+                        <input type="text" name="noDocente" required maxlength="8" placeholder="########">
+                        <br>
+                        <label>ID del Periodo:</label>
+                        <input type="number" name="idPeriodo" min="0" max="250" step="1" value="0" required>
+                        <br>
+                        <label>ID del Asesor Externo:</label>
+						<input type="number" name="idAsesorExterno" min="0" max="250" step="1" value="0" required>
+                        <br>
+                        <label>ID de la Empresa:</label>
+                        <input type="number" name="idEmpresa" min="0" max="250" step="1" value="0" required>
+                        
+                        <br>
+                        <button>Atras</button>
+                        <button>Cancelar</button>
+                        <button>Guardar</button>
+                    </fieldset>
+                </div>
+                </form>
+                <a href="./consultaProyectos.html">Regresar</a>
+            </section>
+        </main>
+        <footer>
+            Elaborado por Carlos Eduardo Galván Salamanca
+        </footer>
+    </body>
+</html>
