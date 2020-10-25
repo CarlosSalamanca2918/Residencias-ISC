@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Residencias-ISC</title>
+    </head>
+    <body>
+        <header>
+            INSTITUTO TECNOLOGICO DE ESTUDIOS SUPERIORES DE ZAMORA
+        </header>
+        <nav>
+        <p>Menu</p>
+        <ul>
+            <li><a href="./consultaUsuarios.html">Usuarios</a></li>
+            
+        </ul>
+        </nav>
+		  <main>
+            <section>
+                <h1>EDICIÓN DE USUARIOS</h1>
+                <form>
+                <div id="datosContenido">
+                    <fieldset>
+                        <legend>Datos del usuario</legend>
+                       
+                           <label>Nombre del usuarios:</label>
+                           <input type="text" name="nombre" placeholder="Nombre del usuarios" maxlength="50" required> 
+                           <br>
+                           <label>Sexo:</label>
+						   <input type="radio" name="Sexo" value="M" checked>Masculino
+                           <input type="radio" name="Sexo" value="F">Femenino
+						   <br>
+                           <label>Telefono:</label>
+                           <input type="number" name="telefono" placeholder="Telefono" maxlength="10" required> 
+                           <br>
+                           <label>Email:</label>
+                           <input type="text" name="email" placeholder="email" maxlength="50" required> 
+                           <br>
+                           <label>Sexo:</label>
+						   <input type="radio" name="estatus" value="A" checked>Aceptado
+                           <input type="radio" name="estatus" value="R">Rechazado
+						   <br>
+                           <label>Tipo de Usuario:</label>
+                           <input type="text" name="tipousuario" placeholder="tipousuario" maxlength="50" required> 
+						   <br>
+                           <label>Contraseña:</label>
+                           <input type="text" name="contraseña" placeholder="contraseña" maxlength="50" required> 
+						   
+						   <button>Siguiente</button>
+                           <button>Cancelar</button>
+                        
+                    </fieldset>
+                </div>
+				 <div id="datosAdministrativos">
+                    <fieldset>
+                        <legend>Datos Administrativos</legend>
+                        <label>ID:</label>
+                        <input type="number" name="idUsuarios" min="0" max="250" step="1" value="0" required>
+				
+                        <button>Atras</button>
+                        <button>Cancelar</button>
+                        <button>Guardar</button>
+                    </fieldset>
+                </div>
+                </form>
+                <a href="./consultaUsuarios.html">Regresar</a>
+            </section>
+        </main>
+        <footer>
+            Elaborado por Carlos Eduardo Galván Salamanca
+        </footer>
+    </body>
+</html>
