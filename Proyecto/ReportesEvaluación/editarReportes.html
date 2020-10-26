@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Residencias-ISC</title>
+    </head>
+    <body>
+        <header>
+            INSTITUTO TECNOLOGICO DE ESTUDIOS SUPERIORES DE ZAMORA
+        </header>
+        <nav>
+        <p>Menu</p>
+        <ul>
+            <li><a href="./consultaReportes.html">Reportes Evaluación</a></li>
+            
+        </ul>
+        </nav>
+		  <main>
+            <section>
+                <h1>EDICIÓN DE REPORTES EVALUACIÓN</h1>
+                <form>
+                <div id="datosContenido">
+                    <fieldset>
+                        <legend>Datos de los Reportes de Evaluación</legend>
+                       
+                           <label>idReportesEvaluación:</label>
+                           <input type="text" name="idAsesorExterno" placeholder="ID Asesor Externo" maxlength="50" required> 
+                           <br>
+                           <label>Calificación Externo:</label>
+                           <input type="CalificaciónExterno" name="Calificación Externo" min="0" max="100" step="1" value="0" required>
+                           <br>
+                           <label>Calificación Interno:</label>
+                           <input type="CalificaciónInterno" name="Calificación Interno" min="0" max="100" step="1" value="0" required> 
+                           <br>
+                           <label>Promedio:</label>
+                           <input type="number" name="Promedio" min="0" max="100" step="1" value="0" required>
+						   <br>
+						   <label>Fecha de Evaluación:</label>
+                           <input type="number" name="FechaEvaluacion" placeholder="##-##-####" maxlength="7" required> 
+                           <br>
+                           <label>Evidencia:</label>
+                           <input type="text" name="evidencis" placeholder="Evidencia" maxlength="50" required> 
+                           <br>
+						   <label>idReportesEvaluación:</label>
+                           <input type="text" name="idReporteParcial" placeholder="ID Reporte Parcial" maxlength="50" required>
+						   <br>
+                           <button>Siguiente</button>
+                           <button>Cancelar</button>
+                        
+                    </fieldset>
+                </div>
+				 
+                </form>
+                <a href="./consultaReportes.html">Regresar</a>
+            </section>
+        </main>
+        <footer>
+            Elaborado por Carlos Eduardo Galván Salamanca
+        </footer>
+    </body>
+</html>
