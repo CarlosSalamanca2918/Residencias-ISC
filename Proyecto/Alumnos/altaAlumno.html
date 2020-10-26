@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Residencias-ISC</title>
+    </head>
+    <body>
+        <header>
+            INSTITUTO TECNOLOGICO DE ESTUDIOS SUPERIORES DE ZAMORA
+        </header>
+        <nav>
+        <p>Menu</p>
+        <ul>
+            <li><a href="./consultaAlumno.html">Alumno</a></li>
+            
+        </ul>
+        </nav>
+		  <main>
+            <section>
+                <h1>REGISTRO DE ALUMNOS</h1>
+                <form>
+                <div id="datosContenido">
+                    <fieldset>
+                        <legend>Datos del Alumno</legend>
+                       
+                           <label>Numero de Control:</label>
+                           <input type="text" name="NoControl" placeholder="Numero de Control" maxlength="50" required> 
+                           <br>
+                           <label>Semestre:</label>
+						   <input type="number" name="Semestre" min="0" max="100" step="1" value="0" required>
+						   <br>
+                           <label>Promedio:</label>
+                           <input type="number" name="Promedio" min="0" max="100" step="1" value="0" required>
+						   <br>
+                           <label>Creditos:</label>
+                           <input type="number" name="Creditos" min="0" max="100" step="1" value="0" required>
+						   <br>
+						   <label>Nombre de la Carrera:</label>
+                           <input type="text" name="NombreCarrera" placeholder="Nombre de la Carrera" maxlength="50" required> 
+                           <br>
+                           <label>ID Usuarios:</label>
+                           <input type="number" name="idUsuarios" min="0" max="100" step="1" value="0" required>
+						   <br>
+                           <button>Siguiente</button>
+                           <button>Cancelar</button>
+                        
+                    </fieldset>
+                </div>
+				 
+                </form>
+                <a href="./consultaAlumno.html">Regresar</a>
+            </section>
+        </main>
+        <footer>
+            Elaborado por Carlos Eduardo Galván Salamanca
+        </footer>
+    </body>
+</html>
