@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Residencias-ISC</title>
+    </head>
+    <body>
+        <header>
+            INSTITUTO TECNOLOGICO DE ESTUDIOS SUPERIORES DE ZAMORA
+        </header>
+        <nav>
+        <p>Menu</p>
+        <ul>
+            <li><a href="./consultaReportesPa.html">Reportes Parcial</a></li>
+            
+        </ul>
+        </nav>
+		  <main>
+            <section>
+                <h1>REGISTRO DE REPORTES PARCIALES</h1>
+                <form>
+                <div id="datosContenido">
+                    <fieldset>
+                        <legend>Datos de los Reportes Parciales</legend>
+                       
+                           <label>idReportesParcial:</label>
+                           <input type="text" name="idReporteParcial" placeholder="idReporteParcial" maxlength="50" required> 
+                           <br>
+                           <label>Nombre:</label>
+                           <input type="text" name="Nombre" placeholder="Nombre" maxlength="50" required>
+                           <br>
+                           <label>NoReporte:</label>
+                           <input type="number" name="noreporte" min="0" max="100" step="1" value="0" required>
+						   <br>
+						   <label>Fecha de Evaluación:</label>
+                           <input type="number" name="FechaEvaluacion" placeholder="##-##-####" maxlength="7" required> 
+                           <br>
+						   <label>idPeriodo:</label>
+                           <input type="text" name="idPeriodo" placeholder="idPeriodo" maxlength="50" required>
+						   <br>
+                           <button>Siguiente</button>
+                           <button>Cancelar</button>
+                        
+                    </fieldset>
+                </div>
+				 
+                </form>
+                <a href="./consultaReportesPa.html">Regresar</a>
+            </section>
+        </main>
+        <footer>
+            Elaborado por Carlos Eduardo Galván Salamanca
+        </footer>
+    </body>
+</html>
