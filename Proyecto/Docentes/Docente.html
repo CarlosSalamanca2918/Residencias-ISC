@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Docentes</title>
+		<script src="../JS/DocentesJS.js"></script>
+		<script src="../JS/DocentesGUI.js"></script>
+	</head>
+	<body onload="inicializarDivs()">
+		<div id="ListadoGeneral">
+			<table border="1" id="datos">
+				<th>NoDocente</th>
+				<th>Escolaridad</th>
+				<th>CarreraAdscrito</th>
+				<th>CantidadProyectos</th>
+				<th>Editar</th>
+				<th>Eliminar</th>
+			</table>
+			<br>
+			<button onclick="nuevo()">Nuevo</button>
+		</div>
+		<div id="DatosIndividuales">
+			<div id="titulo"></div>
+			<label>NoDocente:</label>
+			<input type="number" id="nodocente" name="nodocente" required>
+			<br>
+			<label>Escolaridad:</label>
+			<input type="text" id="escolaridad" name="escolaridad" required>
+			<br>
+			<label>CarreraAdscrito:</label>
+			<input type="text" id="carreraadscrito" name="carreraadscrito" required>
+			<br>
+			<label>CantidadProyectos:</label>
+			<input type="number" id="cantidadproyectos" name="cantidadproyectos" required>
+			<br>
+			<button onclick="realizarOperacion()" id="insercion">Guardar</button>
+			<button onclick="cancelar()"> Cancelar</button>
+		</div>
+	</body>	
+</html>
